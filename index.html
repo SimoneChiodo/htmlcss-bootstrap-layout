@@ -19,7 +19,7 @@
     <body>
         <!-- Header -->
         <header>
-            <div class="container w-75 text-center">
+            <div class="container w-75 pt-5 pb-4 text-center">
                 <h1>Bootstrap 5 Responsive Grid</h1>
                 <p class="lead">
                     Layout a griglia con diversi breakpoint (sm, md, lg).
@@ -29,9 +29,12 @@
 
         <!-- Main -->
         <main>
+            <!-- Rows Container -->
             <div class="container">
-                <div class="row">
-                    <div class="col text-bg-light">
+                <!-- Row 1 -->
+                <div class="row flex-column">
+                    <!-- Col 1 -->
+                    <div class="col p-4 text-bg-light">
                         <h2>Colonna 1</h2>
                         <p>
                             Larghezza intera su dispositivi piccoli, metà
@@ -39,7 +42,9 @@
                             dispositivi grandi.
                         </p>
                     </div>
-                    <div class="col text-bg-secondary">
+
+                    <!-- Col 2 -->
+                    <div class="col p-4 text-bg-secondary">
                         <h2>Colonna 2</h2>
                         <p>
                             Larghezza intera su dispositivi piccoli, metà
@@ -48,6 +53,38 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Row 2 -->
+                <div class="row mt-4 flex-column">
+                    <!-- Col 1 -->
+                    <div class="col p-4 text-bg-primary">
+                        <h2>Colonna 1</h2>
+                        <p>
+                            Metà larghezza su dispositivi piccoli e un terzo su
+                            dispositivi medi e più grandi.
+                        </p>
+                    </div>
+
+                    <!-- Col 2 -->
+                    <div class="col p-4 text-bg-success">
+                        <h2>Colonna 2</h2>
+                        <p>
+                            Metà larghezza su dispositivi piccoli e un terzo su
+                            dispositivi medi e più grandi.
+                        </p>
+                    </div>
+
+                    <!-- Col 3 -->
+                    <div class="col p-4 text-bg-danger">
+                        <h2>Colonna 3</h2>
+                        <p>
+                            Larghezza intera su dispositivi piccoli (col-12) e
+                            un terzo su dispositivi medi e più grandi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
             </div>
         </main>
 
